@@ -1,0 +1,17 @@
+.board {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blue;
+  width: calc(var(--boardSpaceWidth) * 8);
+  margin: auto;
+
+  .boardRow {
+    height: var(--boardSpaceHeight);
+    width: var(--boardSpaceWidth);
+    font-size: 15px;
+    background-color: yellow;
+  }
+}

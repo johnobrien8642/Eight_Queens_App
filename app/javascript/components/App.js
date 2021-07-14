@@ -1,11 +1,12 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import Chessboard from './Chessboard';
 
 const App = () => {
+
   return (
-    <Switch>
-      <div>This is the app</div>
-    </Switch>
+    <React.Fragment>
+      <Chessboard />
+    </React.Fragment>
   )
 }
 
