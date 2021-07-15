@@ -6,9 +6,13 @@ import React from 'react';
 //solved board.
 const renderBoard = (results, loading) => {
   var board = []
-
-  if (!results || loading) {
-    <div className='loading'/>
+  
+  if (loading || !results) {
+    return (
+      <div className='loading border'>
+        <div className='spinner-border' />
+      </div>
+    )
   } else {
     for (var i=0;i<8;i++) {
       let row = []

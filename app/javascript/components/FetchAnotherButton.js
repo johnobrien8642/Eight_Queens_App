@@ -12,6 +12,8 @@ const FetchAnotherButton = ({
     <button
       className='fetchAnotherBtn d-block border rounded px-3 py-2 mx-auto mt-3'
       onClick={() => {
+        setLoading(true)
+        
         fetchAnotherSolution()
           .then(results => {
             //if error object set error message

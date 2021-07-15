@@ -9,7 +9,7 @@ const Chessboard = () => {
   let [results, setResults] = useState(null);
 
   useEffect(() => {
-    //fetch new solution on every mount
+    // fetch new solution on every mount
     fetchAnotherSolution()
       .then(results => {
         //if error object set error message
