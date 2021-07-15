@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ChessboardUtil from './util/chessboard_util';
+import FetchAnotherButton from './FetchAnotherButton';
 const { renderBoard, fetchAnotherSolution } = ChessboardUtil;
 
 const Chessboard = () => {
@@ -25,9 +26,15 @@ const Chessboard = () => {
 
   return (
     <div
-      className='board'
+      className='board mx-auto'
     >
       {renderBoard(results, loading)}
+      
+      <FetchAnotherButton
+        setError={setError}
+        setLoading={setLoading}
+        setResults={setResults}
+      />
     </div>
   )
 }

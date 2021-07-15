@@ -14,5 +14,4 @@
  *= require_self
  */
 
- @import './chessboard.scss';
- @import './homepage.scss'
+ @import './custom.scss';

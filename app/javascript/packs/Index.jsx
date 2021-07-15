@@ -12,7 +12,7 @@ import Root from './Root';
 
 document.addEventListener('DOMContentLoaded', () => {
   var div = document.createElement('div')
-  div.className = 'homePage'
+  div.className = 'homepage container'
 
   ReactDom.render(
     <Root name="React" />,

@@ -25,6 +25,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "dev": "nodemon --exec \"./rails.sh\""
+    "dev": "nodemon --exec \"./rails.sh\"",
+    "build": "npm install && rails s" 
   }
 }

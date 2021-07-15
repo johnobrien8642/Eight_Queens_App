@@ -1,12 +1,16 @@
 import React from 'react';
 import Chessboard from './Chessboard';
+import Header from './Header';
 
 const App = () => {
 
   return (
-    <React.Fragment>
+    <div
+      className='headerAndBoardContainer'
+    >
+      <Header />
       <Chessboard />
-    </React.Fragment>
+    </div>
   )
 }
 

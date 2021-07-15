@@ -1,0 +1,7 @@
+.headerAndBoardContainer {
+  height: 100vh;
+
+  @media (min-width: 768px) {
+    min-height: 780px;
+  }
+}

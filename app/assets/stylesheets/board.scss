@@ -1,0 +1,43 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+.board {
+  position: relative;
+  top: 25%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(var(--boardSpaceWidth) * 8);
+  margin: auto;
+
+  @media (max-width: 768px) {
+    top: 10%;
+  }
+
+  .space {
+    height: var(--boardSpaceHeight);
+    width: var(--boardSpaceWidth);
+    font-size: 15px;
+    background-color: $gray-100;
+    border: 1px solid black;
+
+    img {
+      width: calc(var(--boardSpaceWidth) - 1rem);
+    }
+  }
+
+  .space.rowEven.colEven {
+    background-color: $gray-900;
+  }
+  
+  .space.rowOdd.colOdd {
+    background-color: $gray-900;
+  }
+
+  .fetchAnotherBtn:active {
+    background-color: $gray-400;
+  }
+};
+
+

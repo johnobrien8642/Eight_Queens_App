@@ -17,6 +17,16 @@ const renderBoard = (results, loading) => {
       }
       board.push(row)
     }
+
+    const handleSpaceClass = (row, column) => {
+      if (column % 2 === 0 && row % 2 === 0) {
+        return `space rowEven colEven`
+      } else if (row % 2 !== 0 && column % 2 !== 0) {
+        return `space rowOdd colOdd`
+      } else {
+        return 'space'
+      }
+    }
   
     return board.map(row => {
       return row.map(obj => {
@@ -24,24 +34,42 @@ const renderBoard = (results, loading) => {
         return (
           <div
             key={`${row} ${col}`}
-            className={`boardRow ${row}`}
+            className={handleSpaceClass(row, col)}
 
             //if row and col pair match a results sub array
             //row and col pair then place icon, otherwise keep empty
-          >{queenOrEmptySpace(results, [row, col])}</div>
+          >{queenOrEmptySpace(results, row, col)}</div>
         )
       })
     })
   }
 }
 
-const queenOrEmptySpace = (results, arrPos) => {
+const queenOrEmptySpace = (results, row, col) => {
   //if one of the results matches the row and column
   //of the div being rendered then place Queen
-  if (results.some(subArr => subArr[0]===arrPos[0] && subArr[1]===arrPos[1])) {
-    return <img src="https://img.icons8.com/ios-filled/50/000000/queen-uk.png"/>
-  } else {
-    return ''
+  if (results.some(subArr => subArr[0]===row && subArr[1]===col)) {
+    if 
+      (
+        (row % 2 === 0 && col % 2 === 0) || 
+        (row % 2 !== 0 && col % 2 !== 0)
+      ) {
+        return (
+          <img
+          className='d-block mx-auto mt-2'
+          alt='queen icon empty'
+          src="https://img.icons8.com/ios/100/ffffff/queen-uk.png"
+          />
+          )
+      } else {
+        return (
+          <img 
+            className='d-block mx-auto mt-2'
+            alt='queen icon filled'
+            src="https://img.icons8.com/ios-filled/100/000000/queen-uk.png"
+          />
+        )
+      }
   }
 }
 

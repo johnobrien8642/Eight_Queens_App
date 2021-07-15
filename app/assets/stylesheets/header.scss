@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    width: fit-content;
+  }
+  
+  a {
+    display: inline-block;
+    margin: 0 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
