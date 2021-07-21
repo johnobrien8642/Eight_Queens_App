@@ -26,6 +26,6 @@
   },
   "scripts": {
     "dev": "nodemon --exec \"./rails.sh\"",
-    "build": "npm install && rails s" 
+    "build": "npm install && bundle install" 
   }
 }

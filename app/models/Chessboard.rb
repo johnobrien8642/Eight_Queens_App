@@ -2,10 +2,6 @@ require 'set'
 require_relative '../../lib/positions'
 require_relative '../../lib/solve_eight_queens'
 
-#This is a demonstration to showcase my OOP skills.
-#I've also taken extra care to try to make my code
-#as readable as possible.
-
 #My first attempt at #solve and ::Chessboard can be found in the 
 #non-oop-fast-version branch and was much faster than this
 #version. I've refactored this method to focus on readability
