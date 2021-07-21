@@ -19,6 +19,12 @@ const Header = () => {
         </a>
         Press the Solve button to see different solutions.
       </p>
+      <a 
+        className='githubRepoLink'
+        href='https://github.com/johnobrien8642/Eight_Queens_App'
+      >
+        Go to Github Repository
+      </a>
     </div>
   )
 }
