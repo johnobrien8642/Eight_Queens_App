@@ -9,6 +9,7 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Root from './Root';
+import '../../assets/stylesheets/application.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   var div = document.createElement('div')
