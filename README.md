@@ -1,7 +1,6 @@
 # Eight_Queens_App
 An application which returns random solutions to the Eight Queens puzzle.
-I created this application to showcase my skills using Object Oriented
-Programming, Ruby on Rails with React, Bootstrap and Sass.
+I created this application to showcase my skills using Ruby on Rails with React, Bootstrap and Sass.
 
 To run this app clone the repo and then:
 1) yarn install && bundle install
