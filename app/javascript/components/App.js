@@ -1,4 +1,5 @@
 import React from 'react';
+import bootstrap from 'bootstrap'
 import Chessboard from './Chessboard';
 import Header from './Header';
 
