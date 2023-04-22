@@ -12,7 +12,7 @@ const Header = () => {
       >
         The <a href='https://en.wikipedia.org/wiki/Eight_queens_puzzle'>Eight Queens puzzle</a>
         is a puzzle that requires you to place 8 queens on a chessboard in a manner where no queen
-        can attack another queen.
+        can attack another queen. f
       </p>
       <p
         className='w-75 mx-auto'
